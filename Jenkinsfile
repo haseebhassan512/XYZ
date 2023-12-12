@@ -24,7 +24,7 @@ pipeline {
                     publishers: [
                         sshPublisherDesc(
                             configName: 'HaseebINC',
-                            transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/haseeb')],
+                            transfers: [sshTransfer(sourceFiles: '**/*', remoteDirectory: '/haseeb/')],
                         )
                     ]
                 )
